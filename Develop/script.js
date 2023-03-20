@@ -2,6 +2,7 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 $(function () {
+  
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
@@ -9,10 +10,7 @@ $(function () {
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
   //
- var button = document.querySelector.apply('button')
-
-
-
+  
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
   // attribute of each time-block be used to conditionally add or remove the
@@ -20,16 +18,53 @@ $(function () {
   // current hour in 24-hour time?
   //
 
-
-
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
   //
 
-
-
   // TODO: Add code to display the current date in the header of the page.
+
+
+
+  var timeBlock = $('.time-block');
+
+  timeBlock.each(function () {
+    var timeBlock = $(this);
+
+    // checkout out hour//
+    var hour = timeBlock.attr('id').split('-')[1];
+    var currentHour = dayjs().hour();
+    console.log(parseInt(hour))
+
+  });
+
+  // eventListner for clicks on the save button
+  var button = $('.time-block button');
+
+  function submissions() {
+    var button = $(this);
+    // select textare
+    var textarea = button.prev();
+    //get text values
+    var parentElement = button.parentElement('id');
+
+    //Store value to localStorage
+    //Alert that event was saved
+    console.log(id)
+
+  }
+
+  var date = dayjs().format('dd,mm,yyyy')
+
+  console.log(date)
+
+  button.click(submissions);
+
+
+
+
+
 
 
 
