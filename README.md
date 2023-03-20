@@ -30,3 +30,10 @@ https://github.com/FernyCastro8/plan_your_day_mod5.git
 
 - URL
 https://fernycastro8.github.io/plan_your_day_mod5/
+
+
+- [Screen Shot]
+
+![Screen Shot 2023-03-17 at 10 24 00 PM](https://user-images.githubusercontent.com/124219457/226237620-bc066002-c8c1-489e-b342-1100ccf7d1d9.png)
+
+
